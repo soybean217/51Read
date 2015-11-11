@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shelf_main_cell_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/shelf_main_cell_book_layout"
+        android:layout_width="94dp"
+        android:layout_height="163dp"
+        android:background="@drawable/shelf_book_bg_selector"
+        android:visibility="gone" >
+
+        <com.wanpg.bookread.widget.AsyncShelfImageView
+            android:id="@+id/shelf_book_cover"
+            android:layout_width="78dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shelf_book_cover"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/shelf_book_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="3dp"
+                android:singleLine="true"
+                android:text="人生若只..."
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:typeface="serif" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:background="@color/gainsboro"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/shelf_book_author"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="3dp"
+                android:text="作者：梅子黄时雨"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shelf_main_cell_add_layout"
+        android:layout_width="94dp"
+        android:layout_height="163dp"
+        android:background="@drawable/shelf_book_bg_selector"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/add" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:text="添加书籍"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

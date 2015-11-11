@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+            android:id="@+id/rl_search_cell_back"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/white_orange_selector">
+
+        <CheckBox
+                android:id="@+id/cb_booksearch_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:focusable="false"
+                android:clickable="true"
+                android:checked="false"
+                android:button="@drawable/advance_search_cell_checkbox_selector"/>
+
+        <ImageView
+                android:layout_toRightOf="@id/cb_booksearch_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bookitem_folder"/>
+
+        <TextView
+                android:id="@+id/tv_booksearch_bookname"
+                android:text="sssss"
+                android:textSize="13sp"
+                android:layout_toRightOf="@id/cb_booksearch_checkbox"
+                android:layout_marginLeft="35dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

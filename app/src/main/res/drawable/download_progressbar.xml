@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">   
+          设置背景色图像资源     
+         <item android:id="@android:id/background" android:drawable="@color/white" />   
+ 
+设置第二级进度条颜色图像资源      
+         <item android:id="@android:id/secondaryProgress" android:drawable="@color/blue" />   
+
+设置第一级进度条颜色图像资源    
+        <item android:id="@android:id/progress" android:drawable="@color/gainsboro" />   
+</layer-list>-->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="0dip"/>
+            <gradient
+                    android:startColor="#d0d0d0"
+                    android:endColor="#d0d0d0"
+                    android:angle="270.0"
+                    android:centerY="0.75"
+                    android:centerColor="#d0d0d0"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="0dip"/>
+                <gradient
+                        android:startColor="@color/nav_bar_back"
+                        android:endColor="@color/nav_bar_back"
+                        android:angle="90.0"
+                        android:centerY="0.75"
+                        android:centerColor="@color/nav_bar_back"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="0dip"/>
+                <gradient
+                        android:startColor="@color/nav_bar_back"
+                        android:endColor="@color/nav_bar_back"
+                        android:angle="270.0"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

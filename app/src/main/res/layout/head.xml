@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+
+    <!-- 内容 -->
+
+    <RelativeLayout
+            android:id="@+id/head_contentLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp">
+
+        <!-- 箭头图像、进度条 -->
+
+        <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/txt_layout">
+
+            <!-- 箭头 -->
+
+            <ImageView
+                    android:id="@+id/head_arrowImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/drop_down_to_refresh_list_arrow"/>
+
+            <!-- 进度条 -->
+
+            <ProgressBar
+                    android:id="@+id/head_progressBar"
+                    android:indeterminateDuration="1000"
+                    android:indeterminateDrawable="@drawable/progressbar_custom"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+        </RelativeLayout>
+
+        <!-- 提示、最近更新 -->
+
+        <LinearLayout
+                android:id="@+id/txt_layout"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <!-- 提示 -->
+
+            <TextView
+                    android:id="@+id/head_tipsTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pull_to_refresh_pull_label"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"/>
+
+            <!-- 最近更新 -->
+
+            <TextView
+                    android:id="@+id/head_lastUpdatedTextView"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/pull_to_refresh_refresh_lasttime"
+                    android:textColor="@color/darkgray"
+                    android:textSize="10sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

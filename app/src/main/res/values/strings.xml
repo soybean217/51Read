@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">51阅读</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="ehsz.txt">二号首长</string>
+    <string name="gdzsj.txt">官道之色戒</string>
+    <string name="hzqr.txt">合租情人</string>
+    <string name="rmssjcld.txt">人脉是设计出来的</string>
+
+    <!-- 主页部分footbarment -->
+    <string name="bookshelf">书架</string>
+    <string name="bookstore">书城</string>
+    <string name="search">搜索</string>
+    <string name="me">个人中心</string>
+    <string name="settings">更多</string>
+
+    <!-- 下拉刷新 -->
+    <string name="drop_down_to_refresh_list_pull_tips">下拉可以刷新...</string>
+    <string name="drop_down_to_refresh_list_release_tips">松开即可刷新...</string>
+    <string name="drop_down_to_refresh_list_refreshing_tips">加载中...</string>
+    <string name="drop_down_to_refresh_list_refresh_view_tips">点击可以刷新...</string>
+
+    <string name="more_data">更多数据</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新数据</string>
+    <string name="pull_to_refresh_refresh_lasttime">上次更新时间</string>
+    <string name="load_more">加载更多</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/nav_black_gray" >
+
+    <com.wanpg.bookread.widget.ScrollFragmentLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.wanpg.bookread.widget.ScrollFragmentLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/gainsboro">
+
+    <TextView
+            android:id="@+id/tv_setting"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/more_menu_pop_click_selector"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="用户设置"/>
+
+    <TextView
+            android:id="@+id/tv_download"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/more_menu_pop_click_selector"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="下载管理"/>
+
+    <TextView
+            android:id="@+id/tv_search"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/more_menu_pop_click_selector"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="扫描条件"/>
+
+    <TextView
+            android:id="@+id/tv_filebrowser"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/more_menu_pop_click_selector"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="本地文件"/>
+
+    <TextView
+            android:id="@+id/tv_about"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/more_menu_pop_click_selector"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="关于我们"/>
+
+    <TextView
+            android:id="@+id/tv_exit"
+            android:layout_marginTop="0.5dp"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:background="@drawable/more_menu_pop_click_selector"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="退出应用"/>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="80dp"
+              android:orientation="horizontal"
+              android:paddingTop="8dp"
+              android:paddingBottom="8dp"
+              android:background="@drawable/transparent_orange_selector">
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/iv_maker_date"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/clock_icon"/>
+
+            <TextView
+                    android:id="@+id/tv_maker_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_maker_date"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="时间"/>
+
+            <ImageView
+                    android:id="@+id/iv_maker_progress"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_toRightOf="@id/tv_maker_date"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/tag_icon"/>
+
+            <TextView
+                    android:id="@+id/tv_maker_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_maker_progress"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="进度"/>
+
+            <ImageButton
+                    android:id="@+id/ib_maker_del"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/del_icon"
+                    android:background="@drawable/transparent_orange_selector"/>
+        </RelativeLayout>
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/nav_bar_divider"/>
+
+        <TextView
+                android:id="@+id/tv_maker_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/黒橡"
+                android:textSize="13sp"
+                android:text="时间时间时间时间时间时间时间时间时间时间时间时间时间时间"/>
+    </LinearLayout>
+
+</LinearLayout>

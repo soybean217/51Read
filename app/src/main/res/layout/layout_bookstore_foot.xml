@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:text="最新更新"/>
+
+        <LinearLayout
+                android:id="@+id/ll_zxgx"
+                android:background="@drawable/transparent_darkgray_selector"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:text="更多"/>
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/item_advance"
+                    android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.wanpg.bookread.widget.HeightBasedChildListView
+            android:id="@+id/hbclv_zxgx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

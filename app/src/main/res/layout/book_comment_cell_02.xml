@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:id="@+id/comment_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="买书的时候犹豫了一下，到底买签名版还是非签名版，毕竟一个比原书价只少3元左右，另一个却是打了一半的折（在此感谢卓越） 后来一想到张金鹏的那种对于自己梦想的执着，对于他博客上面悠扬的文字与精美的照片的支持，我出于感谢与尊敬买了一本签名版 我也希望每位像我一样，能够把他的博客地址收藏到IE收藏夹，每次看到他那一篇篇游记，都感觉上是一种心灵上的抚摸的人，也来买签名版吧，这是对他的一种付出的肯定 尽管有在这本书上有些文字曾经在博客上面出现过，但是这是一本用心写的书，用心拍的照片 张金鹏不单带领我周游世界，更是让我从他文字中体验不同地区人的生活状态与规律；不单有简单文字，还有文字后面对更多东西的思考，包括人生，包括环保，包括信仰，包括食物 爱他的文字，爱他的照片-------我是个男的，但绝不是GAY 这本书在我出差火车上看了三分之二，后来工作时候另外同事看到了顺手翻了几页，无不赞叹他的文字和照片 我想我们更应该学习的是他身上的那种对自己梦想的执着，有得就有失，每个人其实都应该有一个梦想，不让上帝造人干嘛"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:id="@+id/comment_info"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:text="lingext (2013-04-12 19:10:07) 评论来源: 豆瓣"
+            android:textSize="14sp"
+            android:textColor="@color/黒橡"/>
+</LinearLayout>

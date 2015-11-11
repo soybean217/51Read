@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingTop="5dp"
+              android:paddingBottom="5dp"
+              android:id="@+id/ll_book_show_author_recommend_cell">
+
+    <com.wanpg.bookread.widget.AsyncImageView
+            android:id="@+id/iv_book_show_author_recommend_cell"
+            android:layout_width="40dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_launcher"/>
+
+    <TextView
+            android:id="@+id/tv_book_show_author_recommend_cell"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="标题标题标题"
+            android:textColor="@color/black"
+            android:textSize="10sp"/>
+</LinearLayout>

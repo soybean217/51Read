@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_update_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center">
+
+    <LinearLayout
+            android:id="@+id/ll_update_checking"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="检查升级"/>
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/red"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="15dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/setting_layout_click_selector">
+
+            <ProgressBar
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="15sp"
+                    android:text="网络连接中，请稍后..."/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_update_nonew"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="当前已是最新版本"/>
+
+        <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@color/red"/>
+
+        <TextView
+                android:id="@+id/tv_update_nonew"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center"
+                android:background="@drawable/setting_layout_click_selector"
+                android:textSize="15sp"
+                android:text="确定"/>
+    </LinearLayout>
+</RelativeLayout>

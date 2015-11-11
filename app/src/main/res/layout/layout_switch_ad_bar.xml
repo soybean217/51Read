@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <com.wanpg.bookread.widget.ChildViewPager
+        android:id="@+id/vp_switchbar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.wanpg.bookread.widget.DotsView
+        android:id="@+id/ll_switchbar_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

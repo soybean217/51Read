@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@color/white">
+
+    <com.wanpg.bookread.widget.SwitchAdBarView
+            android:id="@+id/sav_switchbar"
+            android:layout_width="fill_parent"
+            android:layout_height="115dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+        <requestFocus/>
+    </com.wanpg.bookread.widget.SwitchAdBarView>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/gainsboro">
+
+        <com.wanpg.bookread.widget.ChildViewPager
+                android:layout_weight="1"
+                android:id="@+id/cvp_bookstore_hot"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"/>
+
+
+        <LinearLayout
+                android:layout_marginLeft="0.5dp"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_height="84dp"
+                android:orientation="vertical"
+                android:background="@color/gainsboro">
+
+            <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:background="@drawable/white_orange_selector"
+                        android:orientation="horizontal"
+                        android:id="@+id/ll_girl">
+
+                    <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/icon_girl"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="3dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="女生"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:background="@drawable/white_orange_selector"
+                        android:orientation="horizontal"
+                        android:id="@+id/ll_good">
+
+                    <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/icon_briefs"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="3dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="福利"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_marginTop="0.5dp"
+                    android:layout_weight="1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:background="@drawable/white_orange_selector"
+                        android:orientation="horizontal"
+                        android:id="@+id/ll_rank">
+
+                    <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/icon_rank"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="3dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="排行"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_marginLeft="0.5dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:background="@drawable/white_orange_selector"
+                        android:orientation="horizontal"
+                        android:id="@+id/ll_sort">
+
+                    <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/icon_sort"/>
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="3dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:text="分类"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

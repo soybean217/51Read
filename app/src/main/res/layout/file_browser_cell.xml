@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+            android:id="@+id/rl_file_browser_back"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/white_orange_selector">
+
+        <ImageView
+                android:id="@+id/iv_file_browser_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"/>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_file_browser_icon"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_file_browser_filename"
+                    android:text="Android"
+                    android:textSize="13sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/tv_file_browser_msg"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="9sp"
+                    android:textColor="@color/gray"
+                    android:text="1024个文件"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

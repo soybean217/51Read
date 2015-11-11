@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/layout_head_base" />
+
+    <com.wanpg.bookread.widget.ParentScollerView
+        android:id="@+id/sv_book_show_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:fillViewport="true"
+        android:scrollbarThumbVertical="@drawable/scrollbar_bg" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/ll_book_show_main"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <requestFocus />
+
+                <RelativeLayout
+                    android:id="@+id/count_layout_01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" >
+
+                    <com.wanpg.bookread.widget.AsyncImageView
+                        android:id="@+id/book_show_cover"
+                        android:layout_width="90dp"
+                        android:layout_height="128dp"
+                        android:layout_marginLeft="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/book_show_cover"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/book_show_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="岳母的幸福生活"
+                            android:textSize="17sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="作    者：" />
+
+                            <TextView
+                                android:id="@+id/book_show_author"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="王金鹏" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="出版社：" />
+
+                            <TextView
+                                android:id="@+id/book_show_pub"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="北京大学出版社" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/book_show_read_online"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/pop_bookread_bottom_selector"
+                                android:gravity="center"
+                                android:text="在线阅读" />
+
+                            <TextView
+                                android:id="@+id/book_show_download"
+                                android:layout_width="80dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="30dp"
+                                android:background="@drawable/pop_bookread_bottom_selector"
+                                android:gravity="center"
+                                android:text="下载地址" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/count_layout_02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:background="@color/gainsboro"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="简介"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/book_show_intro"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="sssssssssss" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="标    签：" />
+
+                        <TextView
+                            android:id="@+id/book_show_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="武侠·史诗·女人" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/count_layout_03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:background="@color/gainsboro"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="评论"
+                        android:textColor="@color/black" />
+
+                    <com.wanpg.bookread.widget.HeightBasedChildListView
+                        android:id="@+id/book_show_comment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="false"
+                        android:fadingEdge="none" />
+
+                    <TextView
+                        android:id="@+id/book_show_no_comment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="还没有评论！"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:background="@color/gainsboro"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="下载地址"
+                        android:textColor="@color/black" />
+
+                    <com.wanpg.bookread.widget.HeightBasedChildGridView
+                        android:id="@+id/book_show_download_list"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="5dp"
+                        android:numColumns="2"
+                        android:verticalSpacing="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/book_show_author_recommend"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="25dp"
+                        android:background="@color/gainsboro"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dp"
+                        android:text="本书作者推荐"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout
+                        android:id="@+id/book_show_author_recommend_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include
+                android:id="@+id/in_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                layout="@layout/layout_loading"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </com.wanpg.bookread.widget.ParentScollerView>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/in_main"
+        layout="@layout/layout_head_base" />
+
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/in_main"
+        android:background="@color/white"
+        android:fadingEdge="none"
+        android:scrollbarThumbVertical="@drawable/scrollbar_bg" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_head"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gainsboro"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <com.wanpg.bookread.widget.HeightBasedChildListView
+                android:id="@+id/lv_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/in_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/layout_loading" />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rl_store_list_cell"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+    <ImageView
+            android:id="@+id/iv_store_list_cell"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@color/white"/>
+
+    <TextView
+            android:id="@+id/tv_store_list_cell"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:gravity="bottom|right"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="标题"
+            android:background="@drawable/store_menu_back"/>
+</RelativeLayout>

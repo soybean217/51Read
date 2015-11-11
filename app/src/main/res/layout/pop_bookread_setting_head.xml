@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="clip_vertical">
+
+    <ImageButton
+            android:src="@drawable/head_bar_back"
+            android:id="@+id/ib_bookread_set_head_back"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transparent_darkgray_selector"/>
+
+    <ImageButton
+            android:src="@drawable/reader_topbar_catalog"
+            android:id="@+id/ib_bookread_set_head_catalog"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transparent_darkgray_selector"/>
+
+    <ImageButton
+            android:src="@drawable/reader_topbar_marker"
+            android:id="@+id/ib_bookread_set_head_marker"
+            android:layout_width="60dp"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/ib_bookread_set_head_catalog"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transparent_darkgray_selector"/>
+</RelativeLayout>

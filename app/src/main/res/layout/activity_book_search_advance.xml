@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rl_search_advance_head"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp">
+
+        <include layout="@layout/layout_head_base"/>
+
+        <TextView
+                android:id="@+id/tv_search_folder_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="52dp"
+                android:layout_centerVertical="true"
+                android:text="选择文件扫描目录"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/tv_head_bar_ok"
+                android:layout_width="50dp"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:background="@drawable/nav_bar_button_selector"/>
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/lv_search_advance"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:divider="@color/gainsboro"
+            android:dividerHeight="0.5dp">
+    </ListView>
+
+</LinearLayout>

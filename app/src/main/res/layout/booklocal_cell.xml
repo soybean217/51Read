@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rl_booklocal_back"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:background="@drawable/white_orange_selector">
+
+        <ImageView
+                android:id="@+id/iv_booklocal_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bookitem_txt"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>"
+
+        <LinearLayout
+                android:layout_toRightOf="@id/iv_booklocal_icon"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_centerVertical="true">
+
+            <TextView
+                    android:id="@+id/tv_booklocal_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="书籍一"/>
+
+            <TextView
+                    android:id="@+id/tv_booklocal_msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:text="sssss"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

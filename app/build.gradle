@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "com.wanpg.bookread"
+        minSdkVersion 8
+        targetSdkVersion 22
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/alipay_msp.jar')
+    compile files('libs/android-support-v13.jar')
+    compile files('libs/commons-logging-api-1.1.jar')
+    compile files('libs/java-unrar-0.3.jar')
+    compile files('libs/shupeng-android-sdk1.5.jar')
+    compile files('libs/umeng_sdk.jar')
+}

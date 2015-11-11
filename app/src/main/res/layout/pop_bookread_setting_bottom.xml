@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/rl_bookread_pop_set_bottom"
+             android:layout_width="fill_parent"
+             android:layout_height="55dp"
+             android:layout_alignParentBottom="true"
+             android:stretchColumns="0,1,2,3,4">
+
+    <TableRow>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <ImageButton
+                    android:src="@drawable/bookread_bottombar_fontsize"
+                    android:id="@+id/ib_bookread_set_fontsize"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/transparent_darkgray_selector"/>
+
+            <ImageView
+                    android:id="@+id/iv_bookread_set_fontsize"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/red"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <ImageButton
+                    android:src="@drawable/bookread_bottombar_light"
+                    android:id="@+id/ib_bookread_set_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/transparent_darkgray_selector"/>
+
+            <ImageView
+                    android:id="@+id/iv_bookread_set_light"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/red"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="invisible"/>
+        </RelativeLayout>
+
+
+        <ImageButton
+                android:src="@drawable/bookread_bottombar_moon"
+                android:id="@+id/ib_bookread_set_moonmode"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/transparent_darkgray_selector"/>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <ImageButton
+                    android:src="@drawable/bookread_bottombar_theme"
+                    android:id="@+id/ib_bookread_set_theme"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/transparent_darkgray_selector"/>
+
+            <ImageView
+                    android:id="@+id/iv_bookread_set_theme"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/red"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <ImageButton
+                android:src="@drawable/bookread_bottombar_more_set"
+                android:id="@+id/ib_bookread_set_more"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/transparent_darkgray_selector"/>
+    </TableRow>
+</TableLayout>

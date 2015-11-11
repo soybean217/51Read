@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="火爆推荐"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_hbtj"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/transparent_darkgray_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/item_advance" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.wanpg.bookread.widget.HeightBasedChildListView
+            android:id="@+id/hbclv_hbtj"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </com.wanpg.bookread.widget.HeightBasedChildListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="本周热门"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_cxs"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/transparent_darkgray_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/item_advance" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.wanpg.bookread.widget.HeightBasedChildListView
+            android:id="@+id/hbclv_cxs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.wanpg.bookread.view.HeightBasedChildListView>
+            </com.wanpg.bookread.view.HeightBasedChildListView>
+        </com.wanpg.bookread.widget.HeightBasedChildListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="新书上架"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_new_book"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="经典全本"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_jdqb"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/transparent_darkgray_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/item_advance" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.wanpg.bookread.widget.HeightBasedChildListView
+            android:id="@+id/hbclv_jdqb"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.wanpg.bookread.view.HeightBasedChildListView>
+            </com.wanpg.bookread.view.HeightBasedChildListView>
+        </com.wanpg.bookread.widget.HeightBasedChildListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="成人专区"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_crzq"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/transparent_darkgray_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/item_advance" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.wanpg.bookread.widget.HeightBasedChildListView
+            android:id="@+id/hbclv_crzq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.wanpg.bookread.view.HeightBasedChildListView>
+            </com.wanpg.bookread.view.HeightBasedChildListView>
+        </com.wanpg.bookread.widget.HeightBasedChildListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="都市言情"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_dsyq"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/transparent_darkgray_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/item_advance" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.wanpg.bookread.widget.HeightBasedChildListView
+            android:id="@+id/hbclv_dsyq"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.wanpg.bookread.view.HeightBasedChildListView>
+            </com.wanpg.bookread.view.HeightBasedChildListView>
+        </com.wanpg.bookread.widget.HeightBasedChildListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="恐怖悬疑"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_kbxy"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/transparent_darkgray_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/item_advance" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.wanpg.bookread.widget.HeightBasedChildListView
+            android:id="@+id/hbclv_kbxy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.wanpg.bookread.view.HeightBasedChildListView>
+            </com.wanpg.bookread.view.HeightBasedChildListView>
+        </com.wanpg.bookread.widget.HeightBasedChildListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="玄幻奇幻"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_xhqh"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/transparent_darkgray_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/item_advance" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.wanpg.bookread.widget.HeightBasedChildListView
+            android:id="@+id/hbclv_xhqh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.wanpg.bookread.view.HeightBasedChildListView>
+            </com.wanpg.bookread.view.HeightBasedChildListView>
+        </com.wanpg.bookread.widget.HeightBasedChildListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="武侠仙侠"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_wxxx"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/transparent_darkgray_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/item_advance" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.wanpg.bookread.widget.HeightBasedChildListView
+            android:id="@+id/hbclv_wxxx"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.wanpg.bookread.view.HeightBasedChildListView>
+            </com.wanpg.bookread.view.HeightBasedChildListView>
+        </com.wanpg.bookread.widget.HeightBasedChildListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="军事战争"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_jszz"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/transparent_darkgray_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/item_advance" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.wanpg.bookread.widget.HeightBasedChildListView
+            android:id="@+id/hbclv_jszz"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.wanpg.bookread.view.HeightBasedChildListView>
+            </com.wanpg.bookread.view.HeightBasedChildListView>
+        </com.wanpg.bookread.widget.HeightBasedChildListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:background="@drawable/soft_classify_head_bg" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:text="游戏竞技"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_yxjj"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/transparent_darkgray_selector"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="更多"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/item_advance" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.wanpg.bookread.widget.HeightBasedChildListView
+            android:id="@+id/hbclv_yxjj"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.wanpg.bookread.view.HeightBasedChildListView>
+            </com.wanpg.bookread.view.HeightBasedChildListView>
+        </com.wanpg.bookread.widget.HeightBasedChildListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

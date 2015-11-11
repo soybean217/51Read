@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/store_update_cell_main"
+            android:layout_width="fill_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:background="@drawable/setting_layout_click_selector">
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp">
+
+            <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="撒大大大声大大"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+
+            <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="2012-03-05"
+                    android:textSize="13sp"
+                    android:textColor="@color/黒橡"/>
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/tv_chapterInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:textSize="14sp"
+                android:textColor="@color/黒橡"
+                android:singleLine="true"
+                android:text="撒大大大声大大撒大大大声大大撒大大大声大大撒大大大声大大">
+
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+    <RelativeLayout
+            android:id="@+id/rl_bookread_bottom_set_cell_font"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:paddingBottom="15dp">
+
+        <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tv_bookread_bottom_set_cell_font_title"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="18dp"
+                android:gravity="left|center_vertical"
+                android:text="字体调节"/>
+
+        <ImageView
+                android:id="@+id/iv_bookread_bottom_set_cell_font_titleline"
+                android:layout_below="@id/tv_bookread_bottom_set_cell_font_title"
+                android:background="@color/orange"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"/>
+
+        <RelativeLayout
+                android:id="@+id/rl_bookread_bottom_set_cell_fontsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_bookread_bottom_set_cell_font_titleline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+            <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_bookread_bottom_set_cell_fontsize_cursize_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前字号"/>
+
+            <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_bookread_bottom_set_cell_fontsize_cursize"
+                    android:layout_toRightOf="@id/tv_bookread_bottom_set_cell_fontsize_cursize_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="33"/>
+
+            <Button
+                    android:id="@+id/b_bookread_bottom_set_cell_fontsize_small"
+                    android:layout_below="@id/tv_bookread_bottom_set_cell_fontsize_cursize"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:text="减小"
+                    android:background="@drawable/pop_bookread_bottom_selector"/>
+
+            <Button
+                    android:id="@+id/b_bookread_bottom_set_cell_fontsize_big"
+                    android:layout_below="@id/tv_bookread_bottom_set_cell_fontsize_cursize"
+                    android:layout_toRightOf="@id/b_bookread_bottom_set_cell_fontsize_small"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:text="增大"
+                    android:background="@drawable/pop_bookread_bottom_selector"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_bookread_bottom_set_cell_fontsize"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:visibility="visible">
+
+            <TextView
+                    android:id="@+id/tv_bookread_bottom_set_cell_fonttype_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="字体选择"
+                    android:visibility="gone"/>
+
+            <Button
+                    android:id="@+id/b_bookread_bottom_set_cell_fonttype_default"
+                    android:layout_below="@id/tv_bookread_bottom_set_cell_fonttype_title"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:text="系统默认"
+                    android:background="@drawable/pop_bookread_bottom_selector"
+                    android:visibility="gone"/>
+
+            <Button
+                    android:id="@+id/b_bookread_bottom_set_cell_fonttype_custom"
+                    android:layout_below="@id/tv_bookread_bottom_set_cell_fonttype_title"
+                    android:layout_toRightOf="@id/b_bookread_bottom_set_cell_fonttype_default"
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:text="自定义字体"
+                    android:background="@drawable/pop_bookread_bottom_selector"
+                    android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/rl_bookread_bottom_set_cell_light"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp"
+            android:visibility="visible">
+
+        <RelativeLayout
+                android:id="@+id/rl_bookread_bottom_set_cell_curlight"
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/tv_bookread_bottom_set_cell_curlight_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="当前亮度"/>
+
+            <TextView
+                    android:id="@+id/tv_bookread_bottom_set_cell_curlight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_bookread_bottom_set_cell_curlight_title"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="@color/white"
+                    android:text="22"/>
+
+            <LinearLayout
+                    android:layout_below="@id/tv_bookread_bottom_set_cell_curlight_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                <TextView
+                        android:text="—"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <SeekBar
+                        android:id="@+id/sb_bookread_bottom_set_cell_curlight_change"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:max="250"/>
+
+                <TextView
+                        android:text="+"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_below="@id/rl_bookread_bottom_set_cell_curlight"
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical">
+
+            <TextView
+                    android:id="@+id/tv_bookread_bottom_set_cell_syslight_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="系统亮度"
+                    android:layout_alignParentLeft="true"/>
+
+            <ToggleButton
+                    android:id="@+id/tb_bookread_bottom_set_cell_syslight_change"
+                    android:background="@drawable/sysbright_togglebutton_selector"
+                    android:checked="true"
+                    android:textOn=""
+                    android:textOff=""
+                    android:layout_width="50dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_bookread_bottom_set_cell_theme"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/tv_bookread_bottom_set_cell_theme_backtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="阅读主题"/>
+
+        <HorizontalScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                        android:id="@+id/ll_theme_back1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bookread_back1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_theme_back2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bookread_back2"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/ll_theme_back3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:padding="5dp"
+                        android:orientation="vertical">
+
+                    <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bookread_back3"/>
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+            <TextView
+                    android:id="@+id/tv_bookread_bottom_set_cell_theme_rowdistitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="行间距"/>
+
+            <TextView
+                    android:id="@+id/tv_bookread_bottom_set_cell_theme_rowdistitle_num"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv_bookread_bottom_set_cell_theme_rowdistitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="15"/>
+
+            <SeekBar
+                    android:id="@+id/sb_bookread_bottom_set_cell_theme_rowdistitle"
+                    android:layout_below="@id/tv_bookread_bottom_set_cell_theme_rowdistitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:max="100"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+            <TextView
+                    android:id="@+id/tv_bookread_bottom_set_cell_theme_pagedistitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="左右边距"/>
+
+            <TextView
+                    android:id="@+id/tv_bookread_bottom_set_cell_theme_pagedistitle_num"
+                    android:layout_toRightOf="@id/tv_bookread_bottom_set_cell_theme_pagedistitle"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="15"/>
+
+            <SeekBar
+                    android:id="@+id/sb_bookread_bottom_set_cell_theme_pagedistitle"
+                    android:layout_below="@id/tv_bookread_bottom_set_cell_theme_pagedistitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:max="100"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

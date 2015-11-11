@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/transparent_orange_selector">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp">
+
+        <TextView
+                android:id="@+id/tv_rank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:text="排行榜名称"/>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/item_advance"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

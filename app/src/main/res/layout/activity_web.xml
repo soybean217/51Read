@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/in_load"
+        layout="@layout/layout_head_base" />
+
+    <WebView
+        android:id="@+id/wv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/in_load"
+        android:scrollbarThumbVertical="@drawable/scrollbar_bg"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_progress_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/in_load"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateDrawable="@drawable/progressbar_custom"
+            android:indeterminateDuration="1000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="加载中，请稍后..."
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_button"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nav_bar_back" >
+
+        <ImageButton
+            android:id="@+id/web_home"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/nav_bar_button_selector"
+            android:padding="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/web_home" />
+
+        <ImageButton
+            android:id="@+id/web_previous"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/nav_bar_button_selector"
+            android:padding="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_previous" />
+
+        <ImageButton
+            android:id="@+id/web_next"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/nav_bar_button_selector"
+            android:padding="14dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/arrow_next" />
+
+        <ImageButton
+            android:id="@+id/web_refresh"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/nav_bar_button_selector"
+            android:padding="11dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/refresh1" />
+    </LinearLayout>
+
+</RelativeLayout>
